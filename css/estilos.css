@@ -1,7 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: "Poppins", sans-serif, serif;
+  font-family: "Alegreya", serif, serif;
   background: radial-gradient(circle, #020121 0%, #030341 70%, rgba(0, 0, 0, 0.989216) 100%);
   background-size: 100%;
   padding-top: 2.5em; }
@@ -31,7 +35,7 @@ footer li {
   list-style-position: inside; }
 
 .contactoRedes {
-  font-family: "Poppins", sans-serif;
+  font-family: "Alegreya", serif;
   color: #c1c1c1;
   text-align: center;
   text-decoration: none;
@@ -150,8 +154,16 @@ footer li {
   font-size: 1.8rem;
   color: #7140b6;
   font-style: italic;
-  padding-top: 1rem;
+  margin-top: -0.5rem;
+  padding-bottom: 0.2rem;
   font-weight: bold; }
+
+.linea {
+  background: #c1c1c1;
+  width: 100%;
+  height: 0.15rem;
+  display: block;
+  margin-bottom: 1rem; }
 
 .ContainerGaleria img {
   width: 100%; }
