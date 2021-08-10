@@ -298,3 +298,7 @@ footer li {
     font-size: 9px;
     color: #c1c1c1;
     background: #060606; } }
+
+/*Contenido Servicios*/
+.ordenFotos img {
+  display: none; }
