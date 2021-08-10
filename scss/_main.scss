@@ -75,6 +75,27 @@ footer li{
 	}
 }
 
+
+.TitulosPaginas{
+	h3{
+	font-size: 1.8rem;
+	color: $color-main;
+	font-style: italic;
+	margin-top: -0.5rem;
+	padding-bottom: 0.2rem;
+	font-weight: bold;
+	}
+}
+
+.linea{
+	background: $color-HyF;
+	width: 100%;
+	height: 0.15rem;
+	display: block;
+	margin-bottom: 0.5rem
+}
+
+
 /*Contenido Home*/
 
 #slideHome{
@@ -130,7 +151,7 @@ footer li{
 	display: grid;
 	grid-template-areas:  
 	"list fotos";
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 40% 60%;
 	grid-template-rows: 60px 500px ;
 	grid-column-gap:  20px;
 	grid-row-gap: 30px;
@@ -142,10 +163,10 @@ footer li{
 		color: $color-title;
 		font-size: 1.1rem;
 		list-style-position: inside;
-		margin-left:  5px;
+		margin-left:  3rem;
 		justify-content: space-between;
 		line-height: 3rem;
-		padding-top: 20px;
+		padding-top: 1rem;
 	}
 }
 
@@ -155,65 +176,32 @@ footer li{
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	margin-right: 10rem;
+	padding-top: 2rem;
 	img{
-		width: 15%;
-		border: 3px solid white;
+		width: 45%;
+		border: 2px solid $color-main;
 		justify-self: center;
 		transition: all 500ms ease-in-out;
+		&:hover{border-radius: 50px 0 50px 0 / 100px 0 100px 0;
+		}
 	}
-}
-
-.pic1:hover{
-	transform: scale(3.3);
-	margin-left: 15em;
-	margin-bottom: 7.5em;
-}
-
-.pic2:hover{
-	transform: scale(2);
-}
-
-.pic4:hover{
-	transform: scale(3);
-	margin-bottom: 10.2em;
-}
-
-.pic5:hover{
-	transform: scale(1.8);
-	margin-bottom: 9.2em;
-}
-
-.pic6:hover{
-	transform: scale(2.5);
-	margin-right: 10em;
-	margin-bottom: 7.5em;
 }
 
 /*Contenido Galería*/
 
-.TitulosPaginas{
-	h3{
-	font-size: 1.8rem;
-	color: $color-main;
-	font-style: italic;
-	margin-top: -0.5rem;
-	padding-bottom: 0.2rem;
-	font-weight: bold;
-	}
-}
-
-.linea{
-	background: $color-HyF;
-	width: 100%;
-	height: 0.15rem;
-	display: block;
-	margin-bottom: 1rem
-}
 
 .ContainerGaleria{
+	align-items: center;
+	box-shadow: white;
 	img{
 		width: 100%;
+		padding: 1rem 0;
+		transition: 0.3s linear;
+		&:hover{			
+  			transform: scale(1.2);
+		}
 	}
 }
 
