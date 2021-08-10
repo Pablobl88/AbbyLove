@@ -8,13 +8,14 @@ body {
 	background: $bg-page-main;
 	background-size: 100%;
 	padding-top: 2.5em;
+	background-attachment: fixed;
 }
 
 #barraNav{
 	margin-top: -4rem;
 	.nav-link{
 	color: $color-HyF;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	&:hover{
 		color: $color-hover
 		}
@@ -28,7 +29,7 @@ body {
  }
 
  .nav-link {
-	margin-top: -4rem;
+	margin-top: 4.5rem;
 	margin-right: 2.5rem;
 }
 
@@ -78,10 +79,11 @@ footer li{
 
 .TitulosPaginas{
 	h3{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	color: $color-main;
 	font-style: italic;
-	margin-top: -0.5rem;
+	margin-top: -0.8rem;
+	margin-left:1.2rem;
 	padding-bottom: 0.2rem;
 	font-weight: bold;
 	}
@@ -301,11 +303,14 @@ footer li{
 	}
 
 	#barraNav{
+		.navbar-nav{
+			padding-top:5.5rem;
+		}
 		.nav-link{
 			color: $color-HyF;
 			font-size: 1.1rem;
 			margin-left: 34rem;
-			padding-top: 0.7rem;
+			margin-top: -5rem;
 		}
 	}
 	#slideHome{
@@ -328,6 +333,15 @@ footer li{
 		display: none;
 	}
 }
+
+/*Contenido Servicios*/
+
+.ordenFotos{
+	margin-left: 10rem;
+	padding-top: 2rem;
+}
+
+
 
 @media all and (max-width: 576px){
 

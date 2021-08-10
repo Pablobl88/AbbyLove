@@ -8,13 +8,14 @@ body {
   font-family: "Alegreya", serif, serif;
   background: radial-gradient(circle, #020121 0%, #030341 70%, rgba(0, 0, 0, 0.989216) 100%);
   background-size: 100%;
-  padding-top: 2.5em; }
+  padding-top: 2.5em;
+  background-attachment: fixed; }
 
 #barraNav {
   margin-top: -4rem; }
   #barraNav .nav-link {
     color: #c1c1c1;
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
     #barraNav .nav-link:hover {
       color: #7140b6; }
   #barraNav .logoPrincipal {
@@ -24,7 +25,7 @@ body {
     padding-top: 1rem; }
 
 .nav-link {
-  margin-top: -4rem;
+  margin-top: 4.5rem;
   margin-right: 2.5rem; }
 
 .navbar-light .navbar-toggler-icon {
@@ -60,10 +61,11 @@ footer li {
     font-size: 0.94rem; }
 
 .TitulosPaginas h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #7140b6;
   font-style: italic;
-  margin-top: -0.5rem;
+  margin-top: -0.8rem;
+  margin-left: 1.2rem;
   padding-bottom: 0.2rem;
   font-weight: bold; }
 
@@ -228,11 +230,13 @@ footer li {
     max-width: 24rem; }
   .navbar-light .navbar-toggler-icon {
     margin-left: 14.4rem; }
+  #barraNav .navbar-nav {
+    padding-top: 5.5rem; }
   #barraNav .nav-link {
     color: #c1c1c1;
     font-size: 1.1rem;
     margin-left: 34rem;
-    padding-top: 0.7rem; }
+    margin-top: -5rem; }
   #slideHome {
     position: relative;
     max-width: 65%;
@@ -247,6 +251,11 @@ footer li {
     margin-top: -1.8rem; }
   .fraseMovil {
     display: none; } }
+
+/*Contenido Servicios*/
+.ordenFotos {
+  margin-left: 10rem;
+  padding-top: 2rem; }
 
 @media all and (max-width: 576px) {
   #barraNav .logoPrincipal {
