@@ -35,18 +35,18 @@
 		<nav aria-label="breadcrumb">
   			<ol class="breadcrumb">
     			<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    			<li class="breadcrumb-item active" aria-current="page">Galería</li>
+    			<li class="breadcrumb-item active" aria-current="page">Contacto</li>
   			</ol>
 		</nav>		
 	</div>
 	<section>
 		<form action="respuestaformulario.html" method="POST" enctype="multipart/form-data">
-			<p>Formulario de Contacto</p>
+			<p class="estiloFormContacto">Formulario de Contacto</p>
 			<br>
 			<input type="text" name="nombre" placeholder="Nombre y apellido"><br>
 			<br>
 			<input type="email" name="E-mail" placeholder="E-mail"><br>
-			<p>Quiero consultar sobre:</p>
+			<p class="estiloFormContacto">Quiero consultar sobre:</p>
 			<select name="Servicios o productos">
 				<option value="a">Productos</option>
 				<option value="b">Servicios</option>
@@ -54,7 +54,7 @@
 			<br>
 			<textarea name="Mensaje" placeholder="Mensaje"></textarea><br>
 			<br>
-			<label for="novedades">Deseo recibir novedades de productos y servicios</label>
+			<label class="estiloFormContacto" for="novedades">Deseo recibir novedades de productos y servicios</label>
 			<input type="radio" name="novedades" id="novedades" value="A">
 			<br>
 			<br>
