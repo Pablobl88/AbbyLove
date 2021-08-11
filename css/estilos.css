@@ -169,8 +169,7 @@ ul.carrusel li:target {
 
 /*Contenido Nosotros*/
 #container__nosotros {
-  width: 1000px;
-  margin: auto;
+  margin-left: 2rem;
   padding-top: 1rem; }
 
 .container__nosotros__texto {
@@ -188,7 +187,7 @@ ul.carrusel li:target {
 .containerServicios {
   display: grid;
   grid-template-areas: "list fotos";
-  grid-template-columns: 32% 65%;
+  grid-template-columns: 45% 55%;
   grid-template-rows: 60px 390px;
   grid-column-gap: 20px;
   grid-row-gap: 30px; }
@@ -200,7 +199,7 @@ ul.carrusel li:target {
   list-style-position: inside;
   margin-left: 3rem;
   justify-content: space-between;
-  line-height: 3rem;
+  line-height: 2.5rem;
   padding-top: 1rem; }
 
 .ordenFotos {
@@ -279,9 +278,18 @@ ul.carrusel li:target {
   .ordenFotos {
     margin-left: 10rem;
     padding-top: 2rem; }
+  .ordenFotos img {
+    width: 100%; }
   /*Contenido productos*/
   .estiloProductos {
-    margin-left: 0.5rem; } }
+    margin-left: 0.5rem; }
+  /*Contenido Home*/
+  ul.carrusel li img {
+    height: 320px;
+    object-fit: cover;
+    margin-left: 1.3rem; }
+  .redesHome {
+    margin-right: 1.1rem; } }
 
 @media all and (max-width: 576px) {
   #barraNav .logoPrincipal {
@@ -298,50 +306,36 @@ ul.carrusel li:target {
     font-size: 1rem;
     margin-left: 14rem;
     padding-top: 0.9rem; }
-  #slideHome {
-    max-width: 85%;
-    margin-left: 1.6rem;
-    padding-top: 3rem; }
-    #slideHome p {
-      display: none; }
-  .contactoRedes {
-    font-size: 11px;
-    word-spacing: 1.5rem;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 1.1rem; }
-  .imagenPrincipal {
-    width: 25%;
-    margin-left: 7.5rem;
-    margin-top: -1rem; }
-  .picFooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 7rem; }
-  .fraseMovil {
-    display: inline-block;
-    font-size: 9px;
-    color: #c1c1c1;
-    background: #060606; }
-  /*Contenido Servicios*/
-  .ordenFotos img {
-    display: none; }
-  /*Contenido Home*/
-  ul.carrusel li img {
-    height: 450px;
-    object-fit: cover;
-    margin-left: -2rem; }
-  .menu {
-    text-align: center;
-    margin-left: -24.9em;
-    padding-top: 12rem; }
-  .contactoRedes img {
-    width: 40px; }
+  .estiloFooter {
+    padding-top: 2rem; }
   .imagenPrincipal {
     width: 40%;
     margin-left: 0.5rem;
     margin-top: 1rem; }
   .by {
     margin-left: 4.6rem;
-    padding-top: 0.1rem; } }
+    padding-top: 0.1rem; }
+  /*Contenido Servicios*/
+  .ordenFotos img {
+    display: none; }
+  .listadoServicios ul li {
+    font-size: 0.8rem;
+    text-align: justify; }
+  /*Contenido Home*/
+  ul.carrusel li img {
+    height: 360px;
+    object-fit: cover;
+    margin-left: 0.5rem; }
+  .menu {
+    text-align: center;
+    margin-left: -24.9em;
+    padding-top: 12rem; }
+  .qualities {
+    margin-bottom: -2rem; }
+  .redesHome {
+    margin-right: 26rem; }
+  /*Contenido Nosotros*/
+  .container__nosotros__imagen img {
+    padding-top: 4rem;
+    max-width: 40%;
+    margin-left: 5.2rem; } }
