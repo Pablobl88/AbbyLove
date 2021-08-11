@@ -1,16 +1,21 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: "Poppins", sans-serif, serif;
+  font-family: "Alegreya", serif, serif;
   background: radial-gradient(circle, #020121 0%, #030341 70%, rgba(0, 0, 0, 0.989216) 100%);
-  background-size: 100%;
-  padding-top: 2.5em; }
+  background-size: cover;
+  padding-top: 2.5em;
+  background-attachment: fixed; }
 
 #barraNav {
   margin-top: -4rem; }
   #barraNav .nav-link {
     color: #c1c1c1;
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
     #barraNav .nav-link:hover {
       color: #7140b6; }
   #barraNav .logoPrincipal {
@@ -20,7 +25,7 @@ body {
     padding-top: 1rem; }
 
 .nav-link {
-  margin-top: -4rem;
+  margin-top: 4.5rem;
   margin-right: 2.5rem; }
 
 .navbar-light .navbar-toggler-icon {
@@ -30,24 +35,6 @@ footer li {
   display: inline-block;
   list-style-position: inside; }
 
-.contactoRedes {
-  font-family: "Poppins", sans-serif;
-  color: #c1c1c1;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  word-spacing: 2rem;
-  padding-top: 22px;
-  padding-bottom: 22px; }
-
-.imagenPrincipal {
-  width: 8%;
-  margin-left: 40.3rem;
-  margin-top: -1.7rem; }
-
-.fraseMovil {
-  display: none; }
-
 .NavBreadcrumb nav ol {
   max-width: 100%;
   background: transparent; }
@@ -55,18 +42,123 @@ footer li {
     color: #c1c1c1;
     font-size: 0.94rem; }
 
+.TitulosPaginas h3 {
+  font-size: 2.2rem;
+  color: #7140b6;
+  font-style: italic;
+  margin-top: -0.8rem;
+  margin-left: 1.2rem;
+  padding-bottom: 0.2rem;
+  font-weight: bold; }
+
+.linea {
+  background: #c1c1c1;
+  width: 100%;
+  height: 0.15rem;
+  display: block;
+  margin-bottom: 0.5rem; }
+
+.redesSociales {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100; }
+  .redesSociales .icon {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all 0.5s; }
+    .redesSociales .icon:hover {
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42); }
+  .redesSociales .icon-instagram {
+    background: #3f60a5;
+    border-radius: 1rem 0 0 0; }
+  .redesSociales .icon-facebook {
+    background: #2e406e; }
+  .redesSociales .icon-mail4 {
+    background: #e83028;
+    border-radius: 0 0 0 1rem; }
+
+.estiloFooter {
+  padding-top: 2rem; }
+
+.imagenPrincipal {
+  width: 25%;
+  margin-left: 26.5rem; }
+
+.by {
+  color: #c1c1c1;
+  font-size: 2rem;
+  padding-top: 4.5rem; }
+
+.by {
+  color: #c1c1c1;
+  font-size: 2rem;
+  padding-top: 4.5rem; }
+
 /*Contenido Home*/
-#slideHome {
+.containerHome {
+  margin: auto;
+  width: 745px;
+  padding: 30px; }
+
+.fondo {
+  background-attachment: scroll; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+ul.carrusel {
   position: relative;
-  max-width: 65%;
-  margin-left: 16rem;
-  margin-top: 2rem; }
-  #slideHome p {
-    font-size: 1.3rem;
-    color: #060606;
-    font-style: italic;
-    font-weight: bold;
-    margin-left: 23rem; }
+  width: 745px;
+  height: 300px; }
+
+ul.carrusel li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s; }
+
+ul.carrusel li img {
+  height: 540px;
+  object-fit: cover;
+  margin-left: -12rem; }
+
+ul.carrusel li:first-child {
+  opacity: 1; }
+
+ul.carrusel li:target {
+  opacity: 1; }
+
+.menu {
+  text-align: center;
+  margin: auto;
+  padding-top: 16rem; }
+
+.menu li {
+  display: inline-block;
+  text-align: center; }
+
+.menu li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background-color: #c1c1c1;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 100%; }
 
 .qualities {
   font-size: 30px;
@@ -77,27 +169,26 @@ footer li {
 
 /*Contenido Nosotros*/
 #container__nosotros {
-  width: 1000px;
-  margin: auto;
+  margin-left: 2rem;
   padding-top: 1rem; }
 
-.container__nosotros__texto p {
-  max-width: 800px;
-  color: #ffffff;
+.container__nosotros__texto {
+  max-width: 400px;
+  color: #c1c1c1;
   text-align: justify;
   margin: auto; }
 
 .container__nosotros__imagen img {
   padding-top: 2rem;
-  max-width: 10%;
-  margin-left: 29.6rem; }
+  max-width: 15%;
+  margin-left: 26.6rem; }
 
 /*Contenido Servicios*/
-.ContainerServicios {
+.containerServicios {
   display: grid;
   grid-template-areas: "list fotos";
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 60px 500px;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 60px 390px;
   grid-column-gap: 20px;
   grid-row-gap: 30px; }
 
@@ -106,10 +197,10 @@ footer li {
   color: #ffffff;
   font-size: 1.1rem;
   list-style-position: inside;
-  margin-left: 5px;
+  margin-left: 3rem;
   justify-content: space-between;
-  line-height: 3rem;
-  padding-top: 20px; }
+  line-height: 2.5rem;
+  padding-top: 1rem; }
 
 .ordenFotos {
   grid-area: fotos;
@@ -117,104 +208,45 @@ footer li {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center;
+  margin-right: 10rem;
+  padding-top: 2rem; }
   .ordenFotos img {
-    width: 15%;
-    border: 3px solid white;
+    width: 50%;
+    border: 2px solid #7140b6;
     justify-self: center;
     transition: all 500ms ease-in-out; }
-
-.pic1:hover {
-  transform: scale(3.3);
-  margin-left: 15em;
-  margin-bottom: 7.5em; }
-
-.pic2:hover {
-  transform: scale(2); }
-
-.pic4:hover {
-  transform: scale(3);
-  margin-bottom: 10.2em; }
-
-.pic5:hover {
-  transform: scale(1.8);
-  margin-bottom: 9.2em; }
-
-.pic6:hover {
-  transform: scale(2.5);
-  margin-right: 10em;
-  margin-bottom: 7.5em; }
+    .ordenFotos img:hover {
+      border-radius: 50px 0 50px 0 / 100px 0 100px 0; }
 
 /*Contenido Galería*/
-.TitulosPaginas h3 {
-  font-size: 1.8rem;
-  color: #7140b6;
-  font-style: italic;
-  padding-top: 1rem;
-  font-weight: bold; }
-
-.ContainerGaleria img {
-  width: 100%; }
+.ContainerGaleria {
+  align-items: center;
+  box-shadow: white; }
+  .ContainerGaleria img {
+    width: 100%;
+    padding: 1rem 0;
+    transition: 0.3s linear; }
+    .ContainerGaleria img:hover {
+      transform: scale(1.2); }
 
 /*Contenido Productos*/
-#contenedorProductos {
-  display: flex;
-  direction: column;
-  flex-wrap: wrap;
-  height: 600px;
-  margin-left: 120px;
-  border: 2px solid #ffffff;
+.imagenesProd {
+  width: 80%; }
+
+.textoProd {
+  color: #c1c1c1; }
+
+.estiloProductos {
   align-items: center;
-  width: 1100px; }
+  padding-top: 2rem;
+  margin-left: 16rem; }
 
-#productosTitulo {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: left;
-  color: #ffffff;
-  padding-top: 12px;
-  padding-bottom: 16px; }
-
-.producto1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: 3.5rem; }
-
-.producto2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: 3.5rem; }
-
-.producto3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: 3.5rem; }
-
-.nombreProducto {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #7140b6;
-  width: 400px;
-  margin-right: 2rem; }
-
-.formatoTabla {
-  font-family: Helvetica, sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 0.74rem;
-  list-style-position: inside;
-  width: 600px;
-  justify-content: space-between; }
-
-.imagenCandyCompleto {
-  width: 50%;
-  margin-left: 2rem; }
+/*Contacto*/
+.estiloFormContacto {
+  color: #c1c1c1;
+  margin-left: 0.1rem;
+  padding-top: 1.5rem; }
 
 @media all and (max-width: 768px) {
   #barraNav .logoPrincipal {
@@ -226,25 +258,38 @@ footer li {
     max-width: 24rem; }
   .navbar-light .navbar-toggler-icon {
     margin-left: 14.4rem; }
+  #barraNav .navbar-nav {
+    padding-top: 5.5rem; }
   #barraNav .nav-link {
     color: #c1c1c1;
     font-size: 1.1rem;
     margin-left: 34rem;
-    padding-top: 0.7rem; }
-  #slideHome {
-    position: relative;
-    max-width: 65%;
-    margin-left: 8.4rem;
-    padding-top: 2rem; }
-    #slideHome p {
-      font-size: 0.9rem;
-      margin-left: 16rem; }
+    margin-top: -5rem; }
+  .contactoRedes img {
+    width: 40px; }
   .imagenPrincipal {
-    width: 10%;
-    margin-left: 23.1rem;
-    margin-top: -1.8rem; }
-  .fraseMovil {
-    display: none; } }
+    width: 40%;
+    margin-left: 14rem;
+    margin-top: -1rem; }
+  .by {
+    margin-left: 0.1rem;
+    padding-top: 4rem; }
+  /*Contenido Servicios*/
+  .ordenFotos {
+    margin-left: 10rem;
+    padding-top: 2rem; }
+  .ordenFotos img {
+    width: 100%; }
+  /*Contenido productos*/
+  .estiloProductos {
+    margin-left: 0.5rem; }
+  /*Contenido Home*/
+  ul.carrusel li img {
+    height: 320px;
+    object-fit: cover;
+    margin-left: 1.3rem; }
+  .redesHome {
+    margin-right: 1.1rem; } }
 
 @media all and (max-width: 576px) {
   #barraNav .logoPrincipal {
@@ -261,29 +306,36 @@ footer li {
     font-size: 1rem;
     margin-left: 14rem;
     padding-top: 0.9rem; }
-  #slideHome {
-    max-width: 85%;
-    margin-left: 1.6rem;
-    padding-top: 3rem; }
-    #slideHome p {
-      display: none; }
-  .contactoRedes {
-    font-size: 11px;
-    word-spacing: 1.5rem;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 1.1rem; }
+  .estiloFooter {
+    padding-top: 2rem; }
   .imagenPrincipal {
-    width: 25%;
-    margin-left: 7.5rem;
-    margin-top: -1rem; }
-  .picFooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 7rem; }
-  .fraseMovil {
-    display: inline-block;
-    font-size: 9px;
-    color: #c1c1c1;
-    background: #060606; } }
+    width: 40%;
+    margin-left: 0.5rem;
+    margin-top: 1rem; }
+  .by {
+    margin-left: 4.6rem;
+    padding-top: 0.1rem; }
+  /*Contenido Servicios*/
+  .ordenFotos img {
+    display: none; }
+  .listadoServicios ul li {
+    font-size: 0.8rem;
+    text-align: justify; }
+  /*Contenido Home*/
+  ul.carrusel li img {
+    height: 360px;
+    object-fit: cover;
+    margin-left: 0.5rem; }
+  .menu {
+    text-align: center;
+    margin-left: -24.9em;
+    padding-top: 12rem; }
+  .qualities {
+    margin-bottom: -2rem; }
+  .redesHome {
+    margin-right: 26rem; }
+  /*Contenido Nosotros*/
+  .container__nosotros__imagen img {
+    padding-top: 4rem;
+    max-width: 40%;
+    margin-left: 5.2rem; } }
