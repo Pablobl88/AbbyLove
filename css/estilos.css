@@ -35,29 +35,6 @@ footer li {
   display: inline-block;
   list-style-position: inside; }
 
-.contactoRedes {
-  text-align: center;
-  text-decoration: none;
-  margin-left: 4rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-  .contactoRedes img {
-    width: 30px; }
-  .contactoRedes .ig {
-    margin-left: 25.6rem; }
-  .contactoRedes .mail {
-    margin-right: 20rem;
-    margin-left: -23.6rem; }
-
-.imagenPrincipal {
-  width: 25%;
-  margin-left: 26.5rem; }
-
-.by {
-  color: #c1c1c1;
-  font-size: 2rem;
-  padding-top: 4.5rem; }
-
 .NavBreadcrumb nav ol {
   max-width: 100%;
   background: transparent; }
@@ -80,6 +57,51 @@ footer li {
   height: 0.15rem;
   display: block;
   margin-bottom: 0.5rem; }
+
+.redesSociales {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100; }
+  .redesSociales .icon {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all 0.5s; }
+    .redesSociales .icon:hover {
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42); }
+  .redesSociales .icon-instagram {
+    background: #3f60a5;
+    border-radius: 1rem 0 0 0; }
+  .redesSociales .icon-facebook {
+    background: #2e406e; }
+  .redesSociales .icon-mail4 {
+    background: #e83028;
+    border-radius: 0 0 0 1rem; }
+
+.estiloFooter {
+  padding-top: 2rem; }
+
+.imagenPrincipal {
+  width: 25%;
+  margin-left: 26.5rem; }
+
+.by {
+  color: #c1c1c1;
+  font-size: 2rem;
+  padding-top: 4.5rem; }
+
+.by {
+  color: #c1c1c1;
+  font-size: 2rem;
+  padding-top: 4.5rem; }
 
 /*Contenido Home*/
 .containerHome {
@@ -246,14 +268,6 @@ ul.carrusel li:target {
     margin-top: -5rem; }
   .contactoRedes img {
     width: 40px; }
-  .contactoRedes .ig {
-    margin-left: -4rem; }
-  .contactoRedes .face {
-    margin-left: -12em;
-    padding-top: 0rem; }
-  .contactoRedes .mail {
-    margin-left: 6.5rem;
-    margin-top: -4.1rem; }
   .imagenPrincipal {
     width: 40%;
     margin-left: 14rem;
@@ -324,14 +338,6 @@ ul.carrusel li:target {
     padding-top: 12rem; }
   .contactoRedes img {
     width: 40px; }
-  .contactoRedes .ig {
-    margin-left: -4rem; }
-  .contactoRedes .face {
-    margin-left: -4rem;
-    padding-top: 1rem; }
-  .contactoRedes .mail {
-    margin-left: 1.2rem;
-    padding-top: 5.5rem; }
   .imagenPrincipal {
     width: 40%;
     margin-left: 0.5rem;
